@@ -176,7 +176,9 @@ namespace Tfvc2Git.Core.RunHandlers
                             .Where(x => x.VersionTo < historyEntry.ChangesetId)
                             .ToArray();
                         var parentChangesetId = mergedSources.Any() ? mergedSources.Max(x => x.VersionTo) : -1;
-                        var parentHistoryEntry = Config.History.SingleOrDefault(x => x.ChangesetId == parentChangesetId);
+                        var parentHistoryEntry = Config.History
+                            .Where(x => x.Branch != branchMap)
+                            .SingleOrDefault(x => x.ChangesetId == parentChangesetId);
                         if (!string.IsNullOrWhiteSpace(parentHistoryEntry?.GitSha))
                         {
                             using (var merge = new MergeHandler())
