@@ -1,0 +1,19 @@
+{
+    "TfvcCollectionUri": "http://your_tfvc_instance:8080/DefaultCollection",
+    "GitLocalPath": "C:\\path\\to\\git_repository",
+    "GitRemoteUri": "https://remote_target_git_uri",
+    "GitIgnoreFilePath": "C:\\path\\to\\.gitignore",
+    "FromChangesetId": -1,
+    "ToChangesetId": -1,
+    "Branches": [
+      {
+        "GitBranchName": "main",
+        "TfvcServerPath": "$/team_project/folder"
+      },
+      {
+        "GitBranchName": "develop",
+        "TfvcServerPath": "$/team_project/folder_develop"
+      }
+    ],
+    "AuthorMapFilePath": "C:\\path\\to\\tfvc-2-git.author-map.csv"
+  }

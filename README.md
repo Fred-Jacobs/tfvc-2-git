@@ -30,15 +30,15 @@ There is already multiples tools for this purpose, but none of them satisfied th
 
 ### One tfvc folder to one git branch
 
-`tfvc2git convert --config one_folder_to_one_branch.json` [json](docs/samples/renamed_folder_to_one_branch.json)
+`tfvc2git convert --config one_folder_to_one_branch.json` [json](docs/samples/one_folder_to_one_branch.json)
 
 ### Renamed tfvc folder to one git branch
 
-`tfvc2git convert --config renamed_folder_to_one_branch.json`
+`tfvc2git convert --config renamed_folder_to_one_branch.json`[json](docs/samples/renamed_folder_to_one_branch.json)
 
 ### Multiples tfvc folders to multiples git branches
 
-`tfvc2git convert --config multiple_folders_to_multiple_branches.json`
+`tfvc2git convert --config multiple_folders_to_multiple_branches.json` [json](docs/samples/multiple_folders_to_multiple_branches.json)
 
 ### Check updates
 
